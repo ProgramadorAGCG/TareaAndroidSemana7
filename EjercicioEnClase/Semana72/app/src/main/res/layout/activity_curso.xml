@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".curso" >
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150dp"
+        android:onClick="actualizar"
+        android:text="ACTUALIZAR" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button4"
+        android:layout_alignRight="@+id/button3"
+        android:layout_marginTop="0dp"
+        android:onClick="insertar"
+        android:text="INSERTAR" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button4"
+        android:layout_alignRight="@+id/button4"
+        android:layout_marginBottom="23dp"
+        android:onClick="eliminar"
+        android:text="ELIMINAR" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_marginLeft="18dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toRightOf="@+id/button2"
+        android:onClick="consultadatos"
+        android:text="CONSULTA" />
+
+    <EditText
+        android:id="@+id/txtnomO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_centerVertical="true"
+        android:ems="10">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtnomO"
+        android:layout_marginRight="-60dp"
+        android:layout_marginBottom="22dp"
+        android:layout_toLeftOf="@+id/button3"
+        android:text="NOMBRE-CURSO" />
+
+    <EditText
+        android:id="@+id/txtcodO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtcodO"
+        android:layout_alignLeft="@+id/txtcodO"
+        android:layout_marginBottom="17dp"
+        android:text="COD-CURSO" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_marginBottom="30dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="CURSO"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
